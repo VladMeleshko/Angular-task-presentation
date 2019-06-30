@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Angular</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#ea9999">
+					<h1>Angular</h1>
+					<a href="https://angular.io/">Official web-site</a>
+				</section>
+				<section data-background="#ea9999">
+					<section>
+						<h2>What is frameworks?</h2>
+					</section>
+					<section>
+						<h3>The most popular definitions</h3>
+						<p class="text fragment">— blanks, templates for the software platform, defining the architecture of the software system</p>
+						<p class="text fragment">– software products that simplify the creation and support of technically complex or loaded projects</p>
+					</section>
+					<section>
+						<div class="frame first fragment">
+							<p>Angular</p>
+							<img src="img/angular.png" alt="angular">
+						</div>
+						<div class="frame second fragment">
+							<p>React</p>
+							<img src="img/react.png" alt="react">	
+						</div>
+						<div class="frame third fragment">
+							<p>Vue</p>
+							<img src="img/vue.png" alt="vue">
+						</div>
+						<div class="frame fourth fragment">
+							<p>Meteor</p>
+							<img src="img/meteor.png" alt="meteor">
+						</div>
+						<div class="frame fifth fragment">
+							<p>Ember</p>
+							<img src="img/ember.png" alt="ember">
+						</div>
+						<div class="frame sixth fragment">
+							<p>Backbone</p>
+							<img src="img/backbone.png" alt="backbone">
+						</div>
+						<div class="frame seventh fragment">
+							<p>Aurelia</p>
+							<img src="img/aurelia.jpg" alt="aurelia">
+						</div>
+						<div class="frame eighth fragment">
+							<p>Polymer</p>
+							<img src="img/polymer.png" alt="polymer">
+						</div>
+						<div class="frame ninth fragment">
+							<p>Mithril</p>
+							<img src="img/mithril.png" alt="mithril">
+						</div>
+					</section>
+				</section>
+				<section data-background="#ea9999">
+					<section>
+						<h2>History</h2>
+					</section>
+					<section>
+						<div class="first-developer">
+							<img class="fragment fade-down" src="img/Miško Hevery.jpg" alt="Miško Hevery">
+							<p class="fragment fade-up">Miško Hevery</p>
+						</div>
+						<div class="second-developer ">
+							<img class="fragment fade-down" src="img/Adam Abrons.jpg" alt="Adam Abrons">
+							<p class="fragment fade-up">Adam Abrons</p>
+						</div>
+					</section>
+				</section>
+				<section data-background="#ea9999">
+					<section>
+						<h2>What is the feature of Angular?</h2>
+					</section>
+					<section>
+						<h3>Key facts about Angular</h3>
+						<p class="text fragment highlight-blue fade-in-then-semi-out">• The template language is Typescript, which is a programming language from Microsoft. Although Typescript is the primary language for Angular, applications can also be written using languages such as Dart or JavaScript.</p>
+
+						<p class="text fragment highlight-blue fade-in-then-semi-out">• Angular is supported by Google.</p>
+							
+						<p class="text fragment highlight-blue fade-in-then-semi-out">• Angular is aimed at developing single-page applications, i.e. SPA-solutions (Single Page Application). Popular social networking applications (Twitter, Instagram and Facebook) are examples.</p>
+							
+						<p class="text fragment highlight-blue fade-in-then-semi-out">• Angular provides a client-side MVC infrastructure that helps in running and building dynamic applications with a state-of-the-art level of quality.</p>
+					</section>
+					<section>
+						<p class="text fragment highlight-blue fade-in-then-semi-out">• Apps written in Angular are compatible with different browsers. Angular automatically handles JavaScript code that is appropriate for each browser.</p>
+
+						<p class="text fragment highlight-blue fade-in-then-semi-out">• Clean and accurate user interface design.</p>
+
+						<p class="text fragment highlight-blue fade-in-then-semi-out">• Easy routing.</p>
+
+						<p class="text fragment highlight-blue fade-in-then-semi-out">• Structure facilitates the Angular extension of the syntax of HTML and easily creates reusable components according to directives.</p>
+
+						<p class="text fragment highlight-blue fade-in-then-semi-out">• In General, Angular is a framework for creating large-scale, high-performance, and easy - to-maintain web applications.</p>
+					</section>
+					<section>
+						<h3>Possibilities</h3>
+						<p class="text fragment fade-right">1. It is easy to test your code</p>
+
+						<p class="text fragment fade-right">2. Easily create personalized document object models (Document Object Model, DOM).</p>
+
+						<p class="text fragment fade-right">3. Data modeling is limited to using small data models, which makes the code simple and easy to test.</p>
+
+						<p class="text fragment fade-right">4. Angular is prepared for mobile devices and desktop – one framework for many platforms.</p>
+					</section>
+				</section>
+				<section data-background="#ea9999">
+					<section>
+						<h2>Code examples</h2>
+					</section>
+					<section>
+						<pre class="code-section">
+							<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;script src="/lib/angular-1.4.8.min.js"&gt;&lt;/script&gt;
+&lt;body&gt;
+			
+&lt;div ng-app&gt;
+&lt;p&gt;My first expression: {{ 5 + 5 }}&lt;/p&gt;
+&lt;/div&gt;
+								
+&lt;/body&gt;
+&lt;/html&gt;									
+							</code>
+						</pre>
+						<p class="result one fragment fade-up">Result:</p>
+						<p class="result fragment fade-up">My first expression: 10</p>
+					</section>
+					<section>
+						<pre class="code-section">
+							<code class="code-example">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;script src="/lib/angular-1.4.8.min.js"&gt;&lt;/script&gt;
+&lt;body&gt;
+						
+&lt;div ng-app="myApp" ng-controller="myCtrl"&gt;
+{{ firstName + " " + lastName }}
+&lt;/div&gt;
+							
+&lt;script&gt;
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+$scope.firstName = "John";
+$scope.lastName = "Doe";
+});
+&lt;/script&gt;
+							
+&lt;/body&gt;
+&lt;/html&gt;									
+							</code>
+						</pre>
+						<p class="result two fragment fade-up">Result:</p>
+						<p class="result fragment fade-up">John Doe</p>
+					</section>
+					<section>
+						<pre class="code-section">
+							<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;script src="/lib/angular-1.4.8.min.js"&gt;&lt;/script&gt;
+&lt;body&gt;
+									
+&lt;div ng-app="myApp" ng-controller="myCtrl"&gt;
+									
+First Name: &lt;input type="text" ng-model="firstName"&gt;&lt;br&gt;
+Last Name: &lt;input type="text" ng-model="lastName"&gt;&lt;br&gt;
+&lt;br&gt;
+Full Name: {{firstName + " " + lastName}}
+									
+&lt;/div&gt;
+									
+&lt;script&gt;
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+$scope.firstName = "John";
+$scope.lastName = "Doe";
+});
+&lt;/script&gt;
+									
+&lt;/body&gt;
+&lt;/html&gt;
+							</code>
+						</pre>
+						<p class="result three fragment fade-up">Result:</p>
+						<img class="result three fragment fade-up" src="img/result3.PNG" alt="result 3">
+					</section>
+				</section>
+				<section data-background="#ea9999">
+					<h2>Thank you for your attention!</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
